@@ -1,7 +1,3 @@
-#!/bin/bash
-
-source config.sh
-
 # Run an infinate loop
 while true; do
 	#---------------------------------
