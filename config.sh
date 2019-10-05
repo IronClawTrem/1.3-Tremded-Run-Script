@@ -1,0 +1,27 @@
+#!/bin/bash
+
+SCRIPT=`readlink -f "$0"`
+SCRIPTPATH=`dirname "$SCRIPT"`
+
+BASEGAME=base
+GAME=slacker
+DOWNLOADURL=""
+
+OVERPATH="$SCRIPTPATH/overpath"
+BASEPATH="$SCRIPTPATH/basepath"
+HOMEPATH="$SCRIPTPATH/homepath"
+LOGPATH="$SCRIPTPATH/logs"
+SCRUBBED_LOGPATH="$LOGPATH/scrubbed"
+
+LOGDAYS=90
+
+PATCHES="$SCRIPTPATH/source"
+TREMSRC="$SCRIPTPATH/source/tremulous"
+TREMPATCHES=
+
+QVMREPONAME="AA-QVM"
+QVMREPO="https://github.com/IronClawTrem/$QVMREPONAME.git"
+QVMBRANCH="master"
+
+QVMSRC="$SCRIPTPATH/source/$QVMREPONAME"
+BUILDASSETS=ui
